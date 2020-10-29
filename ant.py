@@ -5,7 +5,6 @@ then creates a txt file and writes the results to the file
 it can be printed out
 this can be helpful sometimes
 happy antenna building.
-VK2SDX
 """
 FREQUENCY = "Enter the Antenna Frequency: "
 print("\n"*50)
