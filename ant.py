@@ -6,26 +6,27 @@ it can be printed out
 this can be helpful sometimes
 happy antenna building.
 """
-FREQUENCY = "Enter the Antenna Frequency: "
+frequency = "Enter the Antenna Frequency: "
 print("\n"*50)
 print("--DOUBLE BAZOOKA ANTENNA--\n___________________________")
-user = float(input(FREQUENCY))
-FORMULA_TOTAL = 299.792458/user*0.9993*0.50
-FORMULA_CENTRE = 299.792458/user*0.6595*0.50
-END = (FORMULA_TOTAL-FORMULA_CENTRE)/2
-FINAL_RESULT = f"""             your coaxial dipole length in metres
+user = float(input(frequency))
+formula_total = 299.792458/user*0.9993*0.50
+formula_centre = 299.792458/user*0.6595*0.50
+end = (formula_total-formula_centre)/2
+final_result = f"""             
+               your coaxial dipole length in metres
                     (frequency = {user} mHz)
                          total length
-          |------------------{FORMULA_TOTAL:.3f}------------------|
-          -----------==========-==========-----------
-          
+          |------------------{formula_total:.3f}------------------|
+          -----------==========-==========-----------    
                          braid length
-                    |--------{FORMULA_CENTRE:.3f}-------|         
+                    |--------{formula_cantre:.3f}-------|         
           -----------==========-==========-----------
-          |--{END:.3f}--|          |--------{FORMULA_TOTAL/2:.3f}--------|
+          |--{end:.3f}--|          |--------{formula_total/2:.3f}--------|
           end length                  half length""".title()
 print("\n"*50)
 write_to_txt_file = open("bazooka.txt", "w") 
-write_to_txt_file.write(FINAL_RESULT) 
-print(FINAL_RESULT)      
+write_to_txt_file.write(final_result) 
+write_to_txt_file.close()
+print(final_result)      
 print("\n"*3)
