@@ -4,6 +4,7 @@ and calculates the length of a Double Bazooka Antenna, (coaxial dipole)
 then creates a txt file and writes the results to the file 
 it can be printed out
 this can be helpful sometimes
+opening the txt file in wordpad worked better than notepad for me
 happy antenna building.
 """
 frequency = "Enter the Antenna Frequency: "
